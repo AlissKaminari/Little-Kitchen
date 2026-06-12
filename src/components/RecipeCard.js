@@ -1,12 +1,9 @@
 import { TouchableOpacity, Image, Text,StyleSheet } from 'react-native';
-
 export default function RecipeCard({ recipe, onPress}) {
-
   return (
     <TouchableOpacity
       style={styles.card}
-      onPress={onPress}
-    >
+      onPress={onPress}>
       <Image
         source={{
           uri: recipe.strMealThumb
@@ -19,7 +16,6 @@ export default function RecipeCard({ recipe, onPress}) {
     </TouchableOpacity>
   );
 }
-
 const styles = StyleSheet.create({
   card: {
     borderRadius: 15,
